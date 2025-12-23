@@ -320,12 +320,12 @@ section {
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
+  transition: transform 0.3s;
 }
 
 .header-link:hover {
   color: var(--color-brand-light);
-  font-weight: 700;
-  font-size: 18px;
+  transform: scale(1.1);
 }
 
 /*hero-section*/
@@ -336,7 +336,14 @@ section {
 }
 
 .hero-section {
-  background-image: linear-gradient(94deg, #fff 9.65%, rgba(255, 255, 255, 0.85) 26.08%, rgba(255, 255, 255, 0.19) 52.74%, rgba(255, 255, 255, 0) 74.46%), url(../images2/фон.png);
+  background-image: linear-gradient(
+      94deg,
+      #fff 9.65%,
+      rgba(255, 255, 255, 0.85) 26.08%,
+      rgba(255, 255, 255, 0.19) 52.74%,
+      rgba(255, 255, 255, 0) 74.46%
+    ),
+    url(../images2/фон.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -357,6 +364,7 @@ section {
 }
 
 .hero-text {
+  margin-top: 122px;
   margin-left: 106px;
 }
 
@@ -381,10 +389,6 @@ section {
 }
 
 /*about us section*/
-.about-us-section {
-  z-index: -1;
-}
-
 .about-us-container {
   display: flex;
   justify-content: space-between;
@@ -487,7 +491,13 @@ section {
 }
 
 .procedures-card-1 {
-  background-image: linear-gradient(180deg, rgba(1, 28, 68, 0) 47.4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%), url(../images2/3.png);
+  background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 47.4%,
+      rgba(1, 28, 68, 0.73) 82.66%,
+      #011c44 99.06%
+    ),
+    url(../images2/3.png);
   border: 2px solid var(--color-brand-white);
   text-align: center;
   border-radius: 120px 4px;
@@ -497,7 +507,13 @@ section {
 }
 
 .procedures-card-2 {
-  background-image: linear-gradient(180deg, rgba(1, 28, 68, 0) 47.4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%), url(../images2/4.png);
+  background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 47.4%,
+      rgba(1, 28, 68, 0.73) 82.66%,
+      #011c44 99.06%
+    ),
+    url(../images2/4.png);
   border: 2px solid var(--color-brand-white);
   text-align: center;
   border-radius: 120px 4px;
@@ -507,7 +523,13 @@ section {
 }
 
 .procedures-card-3 {
-  background-image: linear-gradient(180deg, rgba(1, 28, 68, 0) 47.4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%), url(../images2/5.png);
+  background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 47.4%,
+      rgba(1, 28, 68, 0.73) 82.66%,
+      #011c44 99.06%
+    ),
+    url(../images2/5.png);
   border: 2px solid var(--color-brand-white);
   text-align: center;
   border-radius: 120px 4px;
@@ -637,6 +659,7 @@ section {
   font-weight: 400;
   font-size: 16px;
   text-decoration: none;
+  transition: transform 0.3s;
 }
 
 .politics {
@@ -648,7 +671,7 @@ section {
 
 .footer-link:hover {
   color: var(--color-brand-light);
-  font-weight: 700;
+  transform: scale(1.1);
 }
 
 .footer {
@@ -813,4 +836,4 @@ section {
 .moodal-div {
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

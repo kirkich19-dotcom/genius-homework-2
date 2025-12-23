@@ -319,12 +319,12 @@ section {
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
+  transition: transform 0.3s;
 }
 
 .header-link:hover {
   color: var(--color-brand-light);
-  font-weight: 700;
-  font-size: 18px;
+  transform: scale(1.1);
 }
 
 /*hero-section*/
@@ -661,6 +661,7 @@ section {
   font-weight: 400;
   font-size: 16px;
   text-decoration: none;
+  transition: transform 0.3s;
 }
 
 .politics {
@@ -672,7 +673,8 @@ section {
 
 .footer-link:hover {
   color: var(--color-brand-light);
-  font-weight: 700;
+
+  transform: scale(1.1);
 }
 
 .footer {
