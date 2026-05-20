@@ -467,11 +467,13 @@ section {
 }
 
 /*about us section*/
-.about-us-section__about-us-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .about-us-section__about-us-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+  }
 }
 .about-us-section__transformation-tittle {
   max-width: 320px;
@@ -852,57 +854,6 @@ section {
   color: var(--color-brand-white);
 }
 
-/*Modal*/
-.backdrop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  padding: 20px;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity 0.3s, visibility 0.3s;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.modal {
-  position: relative;
-  width: 100%;
-  border-radius: 48px;
-  max-width: 723px;
-  max-height: 681px;
-  height: 100%;
-  background-color: var(--color-brand-white);
-}
-
-.modal-button-close {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  transition-property: transform;
-  transition-duration: 1s;
-  border: 2px solid;
-  border-radius: 48px;
-  border-color: var(--color-brand-light);
-  background-color: var(--color-brand-light);
-  color: var(--color-primary-dark);
-  cursor: pointer;
-}
-
-.modal-button-close:hover {
-  background-color: var(--color-background);
-  transform: scale(1.5);
-  transform: rotate(1turn);
-}
-
 /*Form*/
 .form {
   background-image: url(../images2/form-back.png);
@@ -1008,6 +959,9 @@ section {
 }
 
 .modal {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   position: relative;
   width: 100%;
   border-radius: 48px;
@@ -1041,17 +995,4 @@ section {
   font-style: 64px;
   font-weight: 700;
   margin-bottom: 40px;
-}
-
-.modal-form {
-  width: 100%;
-  height: 100%;
-  border-radius: 48px;
-  max-width: 723px;
-  max-height: 681px;
-}
-
-.moodal-div {
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=main.css.map */

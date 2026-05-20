@@ -1,9 +1,11 @@
 .about-us-section {
   &__about-us-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: center;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: center;
+    }
   }
 
   &__transformation-tittle {
