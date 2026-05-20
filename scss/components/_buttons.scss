@@ -1,0 +1,18 @@
+/*Button*/
+.button {
+  color: #ffffff;
+  background: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 219px;
+  height: 53px;
+  margin-bottom: 14px;
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}

@@ -1,0 +1,100 @@
+.footer {
+  background-image: url(../images2/background2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-color: var(--color-brand-dark);
+
+  .footer::after {
+    width: 278px;
+    height: 160px;
+    background-size: 100%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../images2/medicaments.png");
+    content: "";
+  }
+
+  &__footer-container {
+    padding-top: 32px;
+    text-align: center;
+    @media screen and (min-width: $bp-laptop) {
+      text-align: left;
+      display: flex;
+      gap: 186px;
+      padding: 56px;
+    }
+  }
+
+  &__footer-addres {
+    display: flex;
+    gap: 186px;
+  }
+
+  &__address-links {
+    display: none;
+    @media screen and (min-width: $bp-laptop) {
+      display: block;
+      font-weight: 400;
+      max-width: 192px;
+      font-size: 16px;
+      color: var(--color-brand-white);
+      text-decoration: none;
+      font-style: normal;
+    }
+  }
+
+  &__address-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fill: var(--color-brand-white);
+
+    @media screen and (min-width: $bp-laptop) {
+      justify-content: start;
+      display: flex;
+      width: 42px;
+      height: 42px;
+      fill: var(--color-brand-white);
+    }
+  }
+
+  &__footer-link {
+    color: var(--color-brand-white);
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+
+  .politics {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-brand-white);
+    text-decoration: none;
+  }
+
+  &__footer-link:hover {
+    color: var(--color-brand-light);
+
+    transform: scale(1.1);
+  }
+
+  &__footer {
+    background-color: var(--color-brand-dark);
+  }
+
+  &__konfidance {
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--color-secondary-light);
+  }
+
+  .information:hover {
+    color: var(--color-brand-white);
+  }
+}

@@ -1,0 +1,77 @@
+.hero-section {
+  background-image:
+    linear-gradient(
+      94deg,
+      #fff 9.65%,
+      rgba(255, 255, 255, 0.85) 26.08%,
+      rgba(255, 255, 255, 0.19) 52.74%,
+      rgba(255, 255, 255, 0) 74.46%
+    ),
+    url(../images2/фон.png);
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  flex-grow: 1;
+  padding-bottom: 233px;
+  display: flex;
+  align-items: center;
+
+  &__hero-container {
+    @media screen and (min-width: $bp-laptop) {
+      padding-top: 17px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__kosmetology {
+    font-size: 12px;
+    @media screen and (min-width: $bp-laptop) {
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+
+  &__call-and-get {
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  &__hero-text {
+    align-items: center;
+    text-align: center;
+    @media screen and (min-width: $bp-laptop) {
+      margin-left: 106px;
+      text-align: left;
+    }
+  }
+
+  &__hero-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 54px;
+    color: var(--color-brand-light);
+    margin-bottom: 32px;
+    line-height: 81%;
+    margin-top: 0;
+    @media screen and (min-width: $bp-laptop) {
+      font-size: 140px;
+      margin-top: 16px;
+      line-height: 81%;
+      margin-bottom: 40px;
+      max-width: 530px;
+      text-align: left;
+    }
+  }
+
+  &__section-title {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+  }
+
+  &__link {
+    color: #faf4ea;
+  }
+}

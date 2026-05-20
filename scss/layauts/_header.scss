@@ -1,0 +1,66 @@
+.header {
+  position: absolute;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: 100%;
+  @media screen and (min-width: $bp-laptop) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
+  }
+  &__header-container {
+    display: flex;
+    align-items: center;
+    gap: 240px;
+  }
+
+  &__address-logos-header {
+    display: none;
+    @media screen and (min-width: $bp-laptop) {
+      fill: var(--color-brand-dark);
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__header-menu {
+    display: none;
+    @media screen and (min-width: $bp-laptop) {
+      display: flex;
+      justify-content: center;
+      gap: 54px;
+      font-size: 18px;
+    }
+  }
+
+  &__header-nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  &__header-link {
+    color: var(--color-brand-dark);
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+
+  &__header-link:hover {
+    color: var(--color-brand-light);
+    transform: scale(1.1);
+  }
+  &__burger {
+    padding-left: 0;
+    display: block;
+    background-color: transparent;
+
+    fill: var(--color-brand-light);
+    justify-content: end;
+
+    @media screen and (min-width: $bp-laptop) {
+      display: none;
+    }
+  }
+}
