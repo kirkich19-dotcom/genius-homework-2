@@ -1,9 +1,9 @@
-const swiper = new Swiper(".procedures-container", {
+const swiper = new Swiper(".swiper-container", {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 20,
   breakpoints: {
-    768: {
+    840: {
       slidesPerView: 2,
     },
     1280: {
@@ -16,7 +16,7 @@ const swiper = new Swiper(".procedures-container", {
     bulletActiveClass: "pagination__button--active",
   },
   navigation: {
-    nextEl: ".carousel-button.next",
-    prevEl: ".carousel-button",
+    nextEl: ".carousel__carousel-button.next",
+    prevEl: ".carousel__carousel-button",
   },
 });
